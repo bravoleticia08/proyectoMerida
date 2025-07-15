@@ -35,12 +35,8 @@
 
 .card-producto-btn {
     margin-top: 1rem;
-    background-color: $colorMarronClaro;
-    color: white;
-    font-family: $font-titulo;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
+    @include animacion-hover;
+    @include boton-estilo($colorMarronClaro);
 }
 
 /* carrusel reseñas */
@@ -101,16 +97,11 @@
 
 .btn-mapa {
     margin-top: 0.8rem;
-    background-color:$colorMarronClaro;
-    color: #fff;
     padding: 0.5rem 1rem;
-    border-radius: 0.3rem;
+    @include animacion-hover;
+    @include boton-estilo($colorMarronClaro);
 }
 
 iframe {
-    width: 12.5rem;
-    /* 200px */
-    height: 9rem;
-    /* 150px */
-    padding: 1rem 0;
+    @include iframe-size(12.5rem, 9rem);
 }
