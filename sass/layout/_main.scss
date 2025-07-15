@@ -1,0 +1,116 @@
+/* MAIN */
+.nuestros-prod-titulo {
+    font-family: "Ephesis", cursive !important;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+}
+
+/* productos */
+.section-cards {
+    @extend %flexColumn;
+    gap: 1rem;
+    padding: 0 1rem 2rem;
+}
+
+.card-producto {
+    @extend %cardText;
+    width: 20rem;
+    height: 25rem;
+    background-color: $colorArena;
+    @extend %flexColumn;
+}
+
+.card-producto img {
+    height: 10rem;
+}
+
+.titulo-producto {
+    @extend %cardText;
+}
+
+.card-producto p {
+    padding: 0 1rem;
+
+}
+
+.card-producto-btn {
+    margin-top: 1rem;
+    background-color: $colorMarronClaro;
+    color: white;
+    font-family: $font-titulo;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* carrusel reseñas */
+.carousel {
+    width: 20rem;
+    padding: 1rem 0;
+}
+
+.carousel-caption
+
+/* texto de las reseñas */
+    {
+    color: black;
+    background-color: $colorMarronClaro;
+    right: 0%;
+    left: 0%;
+    padding: 0%;
+}
+
+.imagen-estrellas
+
+/*rate stars*/
+    {
+    width: 5rem;
+    height: 1rem;
+}
+
+.fondo-reseña
+/* fondo con fotos del lugar*/
+    {
+    height: 20rem;
+}
+
+/* hacemos un mail default para simular el espacio en las otras pages y que el footer no se venga tan arriba */
+.main-default {
+    height: 100vh;
+}
+/* SUCURSALES */
+.sucursales-bloque {
+    display: flex;
+    flex-direction: column;
+}
+
+.sucursales {
+    padding: 2rem 1rem;
+}
+
+.sucursal {
+    @extend %flexColumn;
+    justify-content: space-evenly;
+    background-color: $colorArena;
+    border-left: 5px solid $colorMarronOscuro;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+
+.btn-mapa {
+    margin-top: 0.8rem;
+    background-color:$colorMarronClaro;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+iframe {
+    width: 12.5rem;
+    /* 200px */
+    height: 9rem;
+    /* 150px */
+    padding: 1rem 0;
+}

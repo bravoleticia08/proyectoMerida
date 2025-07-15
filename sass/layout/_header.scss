@@ -1,0 +1,25 @@
+/* HEADER */
+.index-header {
+    padding: 1rem;
+    @extend %flexColumn;
+    gap: 1rem;
+}
+
+.logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.nav-principal {
+    background-color: $colorArena;
+}
+
+.h1-nav {
+    text-transform: capitalize;
+    font-family: $font-titulo !important;
+    font-size: 1.5rem;
+}
+
+.parrafo-principal {
+    padding: 0 1rem;
+}

@@ -1,285 +1,241 @@
-/* Estilos base (MOBILE FIRST) */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+/*variables*/
+/*extends*/
+.sucursal, .card-producto, .section-cards, .index-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(98, 60, 37);
-}
-
-body {
-    font-family: "Quicksand", sans-serif !important;
+.titulo-producto, .card-producto {
+  font-family: "Poiret One", sans-serif !important;
+  font-weight: bold;
+  /*padding: 0.5rem 0;*/
 }
 
 /* HEADER */
 .index-header {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .logo {
-    height: 3rem;
-    width: 3rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .nav-principal {
-    background-color: rgba(160, 82, 5, 0.184);
+  background-color: rgba(160, 82, 5, 0.225);
 }
 
 .h1-nav {
-    text-transform: capitalize;
-    text-align: center;
-    font-family: "Poiret One", sans-serif !important;
-    font-weight: bold;
-    font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: "Poiret One", sans-serif !important;
+  font-size: 1.5rem;
 }
 
 .parrafo-principal {
-    text-align: center;
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 /* MAIN */
 .nuestros-prod-titulo {
-    text-align: center;
-    font-family: "Ephesis", cursive !important;
-    font-size: 2rem;
-    margin: 2rem 0 1rem;
+  font-family: "Ephesis", cursive !important;
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
 }
 
 /* productos */
 .section-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 0 1rem 2rem;
+  gap: 1rem;
+  padding: 0 1rem 2rem;
 }
 
 .card-producto {
-    width: 20rem;
-    height: 25rem;
-    background-color: rgba(160, 82, 5, 0.295);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 20rem;
+  height: 25rem;
+  background-color: rgba(160, 82, 5, 0.225);
 }
 
 .card-producto img {
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-}
-
-.card-producto .titulo-producto {
-    font-family: "Poiret One", sans-serif !important;
-    font-weight: bold;
-    padding: 0.5rem 0;
+  height: 10rem;
 }
 
 .card-producto p {
-    padding: 0 1rem;
-    text-align: center;
+  padding: 0 1rem;
 }
 
 .card-producto-btn {
-    margin-top: 1rem;
-    background-color: rgba(199, 145, 109, 0.653);
-    color: white;
-    padding: 0.5rem;
-    font-family: "Poiret One", sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+  margin-top: 1rem;
+  background-color: rgba(199, 145, 109, 0.848);
+  color: white;
+  font-family: "Poiret One", sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
 }
 
 /* carrusel reseñas */
 .carousel {
-    width: 20rem;
-    padding: 1rem 0;
+  width: 20rem;
+  padding: 1rem 0;
 }
 
-.carousel-caption
-
-/* texto de las reseñas */
-    {
-    color: black;
-    background-color: rgba(199, 145, 109, 0.936);
-    right: 0%;
-    left: 0%;
-    padding: 0%;
+.carousel-caption {
+  color: black;
+  background-color: rgba(199, 145, 109, 0.848);
+  right: 0%;
+  left: 0%;
+  padding: 0%;
 }
 
-.imagen-estrellas
-
-/*rate stars*/
-    {
-    width: 5rem;
-    height: 1rem;
+.imagen-estrellas {
+  width: 5rem;
+  height: 1rem;
 }
 
-.fondo-reseña
-
-/* fondo con fotos del lugar*/
-    {
-    object-fit: cover;
-    height: 20rem;
+.fondo-reseña {
+  height: 20rem;
 }
 
 /* hacemos un mail default para simular el espacio en las otras pages y que el footer no se venga tan arriba */
 .main-default {
-    height: 100vh;
-}
-
-/* FOOTER */
-footer {
-    background-color: rgb(57, 28, 2);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-}
-
-.logo-footer {
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
+  height: 100vh;
 }
 
 /* SUCURSALES */
 .sucursales-bloque {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .sucursales {
-    padding: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .sucursal {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgba(199, 145, 109, 0.318);
-    border-left: 5px solid rgb(57, 28, 2);
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
+  justify-content: space-evenly;
+  background-color: rgba(160, 82, 5, 0.225);
+  border-left: 5px solid rgb(57, 28, 2);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
 }
 
 .btn-mapa {
-    margin-top: 0.8rem;
-    background-color: #c58c63;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 0.3rem;
-    font-weight: bold;
+  margin-top: 0.8rem;
+  background-color: rgba(199, 145, 109, 0.848);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
 }
 
 iframe {
-    width: 12.5rem;
-    /* 200px */
-    height: 9rem;
-    /* 150px */
-    padding: 1rem 0;
+  width: 12.5rem;
+  /* 200px */
+  height: 9rem;
+  /* 150px */
+  padding: 1rem 0;
 }
 
+/* FOOTER */
+footer {
+  background-color: rgb(57, 28, 2);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.logo-footer {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
 
 /* -----------------------RESPONSIVE--------------------------- */
 /* TABLET (min-width: 768px) */
-
 @media (min-width: 768px) {
-
-    .section-cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nuestros-prod-titulo {
-        font-size: 3rem;
-    }
-
-    iframe {
-        width: 21rem;
-        height: 21rem;
-    }
-
-    .sucursales-titulo {
-        font-size: 2.2rem;
-    }
-
-    .sucusales-info {
-        font-size: 1.2rem;
-    }
+  .section-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nuestros-prod-titulo {
+    font-size: 3rem;
+  }
+  iframe {
+    width: 21rem;
+    height: 21rem;
+  }
+  .sucursales-titulo {
+    font-size: 2.2rem;
+  }
+  .sucusales-info {
+    font-size: 1.2rem;
+  }
 }
-
-
 /* DESKTOP (min-width: 1024px) */
 @media (min-width: 1024px) {
-
-    .h1-nav {
-        font-size: 2.5rem;
-    }
-
-    .parrafo-principal {
-        font-size: 1.1rem;
-    }
-
-    .carousel {
-        width: 50%;
-    }
-
-    .logo-footer {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .text-footer {
-        font-size: 1.5rem;
-    }
-
-    iframe {
-        width: 28rem;
-        height: 28rem;
-        padding: 0.3rem;
-    }
-
-    .sucursales-bloque {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-
-    .sucursal {
-        margin: 0.5rem;
-        flex-direction: row;
-    }
-
-    .sucursales-titulo {
-        font-size:2.5rem;
-    }
-
-    .sucusales-info {
-        font-size: 1rem;
-    }
+  .h1-nav {
+    font-size: 2.5rem;
+  }
+  .parrafo-principal {
+    font-size: 1.1rem;
+  }
+  .carousel {
+    width: 50%;
+  }
+  .logo-footer {
+    width: 4rem;
+    height: 4rem;
+  }
+  .text-footer {
+    font-size: 1.5rem;
+  }
+  iframe {
+    width: 28rem;
+    height: 28rem;
+    padding: 0.3rem;
+  }
+  .sucursales-bloque {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .sucursal {
+    margin: 0.5rem;
+    flex-direction: row;
+  }
+  .sucursales-titulo {
+    font-size: 2.5rem;
+  }
+  .sucusales-info {
+    font-size: 1rem;
+  }
 }
+/* Estilos base (MOBILE FIRST) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(98, 60, 37);
+}
+
+body {
+  font-family: "Quicksand", sans-serif !important;
+}
+
+/*# sourceMappingURL=style.css.map */

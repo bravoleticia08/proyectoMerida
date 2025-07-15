@@ -1,0 +1,26 @@
+@import "./utilities/variables";
+@import "./utilities/extend";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+@import "./mq/mq";
+/* Estilos base (MOBILE FIRST) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(98, 60, 37);
+}
+
+body {
+    font-family: "Quicksand", sans-serif !important;
+}
+

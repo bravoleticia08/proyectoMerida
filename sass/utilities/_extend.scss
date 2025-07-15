@@ -1,0 +1,11 @@
+/*extends*/
+%flexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+%cardText{
+    font-family: $font-titulo !important;
+    font-weight: bold;
+    /*padding: 0.5rem 0;*/
+}
