@@ -45,7 +45,7 @@
   margin: 2rem 0 1rem;
 }
 
-/* productos */
+/* productos index */
 .section-cards {
   gap: 1rem;
   padding: 0 1rem 2rem;
@@ -104,11 +104,6 @@
   height: 20rem;
 }
 
-/* hacemos un mail default para simular el espacio en las otras pages y que el footer no se venga tan arriba */
-.main-default {
-  height: 100vh;
-}
-
 /* SUCURSALES */
 .sucursales-bloque {
   display: flex;
@@ -150,6 +145,22 @@ iframe {
   width: 12.5rem;
   height: 9rem;
   padding: 1rem 0;
+}
+
+.gradient {
+  background: linear-gradient(to bottom, rgb(254, 254, 254), rgba(160, 82, 5, 0.225), rgb(57, 28, 2));
+}
+
+/* NOSOTROS */
+.nosotros-main {
+  background-color: rgba(160, 82, 5, 0.225);
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
 }
 
 /* FOOTER */

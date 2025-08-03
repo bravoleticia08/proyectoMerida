@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>productos</title>
+    <title>Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -15,12 +15,12 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100"><!--que el body siempre tenga al menos 100vh y use Flexbox-->
     <header class="index-header">
         <nav class="navbar navbar-expand-md w-100 nav-principal rounded-5">
             <div class="container-fluid ">
                 <!-- el logo con link-->
-                <a class="navbar-brand" href="#"><img class="logo" src="../img/merida-logo-sin-fondo.png"
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/merida-logo-sin-fondo.png"
                         alt="logo-bakery-merida"></a>
                 <!-- imagen de la hamburquesa uqe solo se ve en mobile-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -55,15 +55,144 @@
 
     </header>
 
-    <main class="main-default"></main>
+    <main class="flex-fill"><!--contenido principal ocupe el espacio restante entre el header (si hay) y el footer.-->
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <h2 class="nuestros-prod-titulo text-center">Conocé más de nuestros productos</h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/alfajorcitos-maicena.jpg" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="alfajorcitos">
+                        <div class="carousel-caption">
+                            <h5>Alfajores de maicena</h5>
+                            <p>Alfajores suaves de maicena, rellenos con dulce de leche y bordes cubiertos con coco
+                                rallado </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cafe-negro.webp" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="matcha">
+                        <div class="carousel-caption">
+                            <h5>Café Negro</h5>
+                            <p>Café 100% puro, intenso y aromático. Para quienes disfrutan del sabor auténtico del café.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cañoncitos.webp" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="imagen-local-2">
+                        <div class="carousel-caption">
+                            <h5>Cañoncitos</h5>
+                            <p>Hechos con masa hojaldrada dorada al horno y rellenos con dulce de leche.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/matcha.jpg" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="matcha">
+                        <div class="carousel-caption">
+                            <h5>Matcha Latte</h5>
+                            <p>Té verde japonés molido finamente, batido con leche cremosa para un sabor suave, vegetal y ligeramente dulce.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cookies.jpg" class="d-block w-100 fondo-reseña object-fit-cover" alt="cookies">
+                        <div class="carousel-caption">
+                            <h5>Cookies</h5>
+                            <p>Galletas crocantes con manteca, azúcar, harina y chips de chocolate semiamargo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cafe-late.jpg" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="matcha">
+                        <div class="carousel-caption">
+                            <h5>Café Latte</h5>
+                            <p>Café espresso suave combinado con leche vaporizada. Cremoso, equilibrado y reconfortante.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/cupcakes.jpg" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="cupcakes">
+                        <div class="carousel-caption">
+                            <h5>Cupcakes</h5>
+                            <p>Nuestros cupcakes están hechos artesanalmente, con ingredientes frescos y mucho cariño.
+                                Disfrutalos en variedad.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/lemon-pie.jfif" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="lemon-pie">
+                        <div class="carousel-caption">
+                            <h5>Lemon Pie</h5>
+                            <p>Tarta con base de masa, relleno de crema de limón y cobertura de merengue suave.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/masitas.jpg" class="d-block w-100 fondo-reseña object-fit-cover" alt="Masitas">
+                        <div class="carousel-caption">
+                            <h5>Masitas</h5>
+                            <p>Masitas dulces surtidas, elaboradas con manteca, harina, azúcar y decoradas con glasé o
+                                chocolate.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/palmeritas.jfif" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="Palmeritas">
+                        <div class="carousel-caption">
+                            <h5>Palmeritas</h5>
+                            <p>Hojaldre crocante caramelizado, en forma de corazón, con manteca y azúcar.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/pasta-frola.webp" class="d-block w-100 fondo-reseña object-fit-cover"
+                            alt="pasta-frola">
+                        <div class="carousel-caption">
+                            <h5>Pasta Frola</h5>
+                            <p>Tarta clásica de masa suave con dulce de membrillo y enrejado de masa por encima</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
 
-    <footer>
-        <p class="text-footer">Para mayor informacion por favor contactarse por:</p>
+    <footer><!--se queda abajo, incluso si el contenido no lo empuja.-->
+        <p class="text-footer">Visitanos en:</p>
         <div>
-            <a href="https://web.whatsapp.com/" target="_blank"><img class="logo-footer" src="../img/logo-wsp.png" alt="logo-whatsapp"></a>
-            <a href="https://accounts.google.com/" target="_blank"><img class="logo-footer" src="../img/logo-mail.png" alt="logo-mail"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="logo-footer" src="../img/logo-ig.png" alt="logo-instagram"></a>
-            <a href="https://www.tiktok.com/" target="_blank"><img class="logo-footer" src="../img/logo-tiktok.png" alt="logo-tiktok"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="logo-footer" src="../img/logo-wsp.png"
+                    alt="logo-whatsapp"></a>
+            <a href="https://accounts.google.com/" target="_blank"><img class="logo-footer" src="../img/logo-mail.png"
+                    alt="logo-mail"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="logo-footer" src="../img/logo-ig.png"
+                    alt="logo-instagram"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img class="logo-footer" src="../img/logo-tiktok.png"
+                    alt="logo-tiktok"></a>
         </div>
 
     </footer>

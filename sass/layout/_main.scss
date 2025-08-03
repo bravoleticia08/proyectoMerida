@@ -5,7 +5,7 @@
     margin: 2rem 0 1rem;
 }
 
-/* productos */
+/* productos index */
 .section-cards {
     @extend %flexColumn;
     gap: 1rem;
@@ -65,15 +65,13 @@
 }
 
 .fondo-reseña
+
 /* fondo con fotos del lugar*/
     {
     height: 20rem;
 }
 
-/* hacemos un mail default para simular el espacio en las otras pages y que el footer no se venga tan arriba */
-.main-default {
-    height: 100vh;
-}
+
 /* SUCURSALES */
 .sucursales-bloque {
     display: flex;
@@ -104,4 +102,20 @@
 
 iframe {
     @include iframe-size(12.5rem, 9rem);
+}
+
+.gradient {
+    background: linear-gradient(to bottom,rgb(254, 254, 254), $colorArena, $colorMarronOscuro);
+}
+
+/* NOSOTROS */
+.nosotros-main{
+    background-color: $colorArena;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
 }

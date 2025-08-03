@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nosotros</title>
+    <title>Nosotros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
@@ -15,12 +15,12 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100"><!--que el body siempre tenga al menos 100vh y use Flexbox-->
     <header class="index-header">
         <nav class="navbar navbar-expand-md w-100 nav-principal rounded-5">
             <div class="container-fluid ">
                 <!-- el logo con link-->
-                <a class="navbar-brand" href="#"><img class="logo" src="../img/merida-logo-sin-fondo.png"
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/merida-logo-sin-fondo.png"
                         alt="logo-bakery-merida"></a>
                 <!-- imagen de la hamburquesa uqe solo se ve en mobile-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -55,15 +55,60 @@
 
     </header>
 
-    <main class="main-default"></main>
+    <main class="flex-fill d-flex nosotros-main">
+        <!--contenido principal ocupe el espacio restante entre el header (si hay) y el footer.-->
+        <div class="d-flex flex-column justify-content-center align-items-center p-4">
+            <h1>Somos MÉRIDA CAFÉ</h1>
+            <p>En Merida, creemos que los mejores momentos se comparten alrededor de una buena taza de café
+                y un pan recién horneado.
+                Somos una panadería y café de espíritu artesanal, donde cada receta está hecha con ingredientes
+                seleccionados, manos expertas y mucho corazón.
 
-    <footer>
-        <p class="text-footer">Para mayor informacion por favor contactarse por:</p>
+                Desde nuestros inicios, nos propusimos crear un espacio cálido y acogedor, donde cada visita se sienta
+                como volver a casa.
+                Ofrecemos productos frescos todos los días: panes de masa madre, facturas tradicionales, tortas caseras
+                y una variedad de cafés seleccionados cuidadosamente.
+
+                Valoramos lo simple, lo hecho a mano y el sabor que se recuerda.
+                Más que una panadería, somos un lugar para disfrutar, relajarse y conectar con los demás.</p>
+            <h2 class="h1-nav">¡Te esperamos!</h2>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/local-3.jpg" class="d-block w-100" alt="foto-local-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/local-2.jpg" class="d-block w-100" alt="foto-local-2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/local.jpg" class="d-block w-100" alt="foto-local-3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer><!--se queda abajo, incluso si el contenido no lo empuja.-->
+        <p class="text-footer">Visitanos en:</p>
         <div>
-            <a href="https://web.whatsapp.com/" target="_blank"><img class="logo-footer" src="../img/logo-wsp.png" alt="logo-whatsapp"></a>
-            <a href="https://accounts.google.com/" target="_blank"><img class="logo-footer" src="../img/logo-mail.png" alt="logo-mail"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img class="logo-footer" src="../img/logo-ig.png" alt="logo-instagram"></a>
-            <a href="https://www.tiktok.com/" target="_blank"><img class="logo-footer" src="../img/logo-tiktok.png" alt="logo-tiktok"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="logo-footer" src="../img/logo-wsp.png"
+                    alt="logo-whatsapp"></a>
+            <a href="https://accounts.google.com/" target="_blank"><img class="logo-footer" src="../img/logo-mail.png"
+                    alt="logo-mail"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="logo-footer" src="../img/logo-ig.png"
+                    alt="logo-instagram"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img class="logo-footer" src="../img/logo-tiktok.png"
+                    alt="logo-tiktok"></a>
         </div>
 
     </footer>
